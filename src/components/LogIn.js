@@ -14,7 +14,7 @@ const LogIn = ({ onClose }) => {
   const handlePasswordChange = (e) => setPassword(e.target.value);
 
   const onGroupButtonClick = useCallback(async () => {
-    setErrorMessage(""); // Reset the error message
+    setErrorMessage(""); // Reset the error message here
     try {
       const response = await fetch("http://localhost:8080/account/login", {
         method: "POST",
